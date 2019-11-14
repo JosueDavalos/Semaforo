@@ -43,3 +43,11 @@ void ImprimirVia(Sem *sem1, Sem *sem2){
 void free_sem(Sem *sem){
     free(sem);
 }
+
+void help(){
+	printf("Semaforo de dos vias. El tiempo de duracion del amarillo depende de la velocidad de la carretera.\n");
+	printf("Usos: \n");
+	printf("   semaforo [-v] <velocidad>\n");
+	printf("   semaforo -h\n");
+	printf("Opciones:\n   -v Velocidad en Km/h\n   -h Mostrar informacion de ayuda\n");
+}
