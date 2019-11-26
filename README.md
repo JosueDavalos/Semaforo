@@ -27,19 +27,19 @@ Tiempo Verde: 17 segundos
 Empezamos el ciclo:
 
             Semaforo 1      Semaforo 2
-Rojo:     	    1		        0
-Amarillo:   	0		        0
-Verde:      	0		        1
+Rojo:     	    1		            0
+Amarillo:   	  0		            0
+Verde:      	  0		            1
 
             Semaforo 1      Semaforo 2
-Rojo:     	    1		        0
-Amarillo:   	0		        1
-Verde:      	0		        0
+Rojo:     	    1		            0
+Amarillo:   	  0		            1
+Verde:      	  0		            0
 
             Semaforo 1      Semaforo 2
-Rojo:       	0		        1
-Amarillo: 	    0		        0
-Verde:    	    1		        0
+Rojo:       	  0		            1
+Amarillo: 	    0		            0
+Verde:    	    1		            0
 ```
 
 Ejemplo, para ejecutar el semaforo con un valor de velocidad diferente:
@@ -52,24 +52,8 @@ Tiempo Rojo: 21 segundos
 Tiempo Amarillo: 4 segundos
 Tiempo Verde: 17 segundos
 Empezamos el ciclo:
-
-            Semaforo 1      Semaforo 2
-Rojo:     	    1		        0
-Amarillo:   	0		        0
-Verde:      	0		        1
-
-            Semaforo 1      Semaforo 2
-Rojo:     	    1		        0
-Amarillo:   	0		        1
-Verde:      	0		        0
-
-            Semaforo 1      Semaforo 2
-Rojo:       	0		        1
-Amarillo: 	    0		        0
-Verde:    	    1		        0
-
 ```
-
+Como se puede observar lo que cambia es el tiempo de duración de los colores del semáforo, el cuál depende de la velocidad.
 
 ## Compilación
 Para compilar el repositorio:
