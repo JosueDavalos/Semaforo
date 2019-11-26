@@ -56,7 +56,7 @@ void imprimirVia(Sem *sem1, Sem *sem2){
  * Funcion de ayuda donde se presenta el uso del programa
 */
 void ayuda(){
-	printf("Semaforo de dos vias. El tiempo de duracion del amarillo depende de la velocidad de la carretera.\n");
+	printf("Semaforo de dos vias. El tiempo de duracion del ciclo depende de la velocidad de la carretera.\n");
 	printf("Usos: \n");
 	printf("   semaforo [-v <velocidad>]\n");
 	printf("   semaforo -h\n");
