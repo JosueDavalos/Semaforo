@@ -22,3 +22,4 @@ void tiempoEspera(unsigned int segundos); // funcion para esperar en el tiempo
 /*********************** FUNCIONES MAIN **********************/
 void imprimirVia(Sem *sem1, Sem *sem2);
 void ayuda();
+int Isdigit(char *p);

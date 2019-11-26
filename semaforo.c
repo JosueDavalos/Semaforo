@@ -50,13 +50,6 @@ unsigned int tiempoRojo(unsigned int velocidad_limite){
     return (CICLO/2) + (LONGITUD_VEHICULO+ANCHO_VIA)/velocidad_limite - 1;
 }
 
-// unsigned int tiempoRojo(unsigned int velocidad_limite){
-//     return (CICLO/2) + (LONGITUD_VEHICULO+ANCHO_VIA)/velocidad_limite;
-// }
-
-// unsigned int tiempoVerde(unsigned int velocidad_limite){
-//     return CICLO - tiempoAmarillo(velocidad_limite) - tiempoRojo(velocidad_limite);
-// }
 
 unsigned int tiempoVerde(unsigned int velocidad_limite){
     return CICLO - tiempoAmarillo(velocidad_limite) - tiempoRojo(velocidad_limite);

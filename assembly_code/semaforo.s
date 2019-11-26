@@ -3,7 +3,7 @@
 	.globl	init_sem
 	.type	init_sem, @function
 init_sem:
-.LFB5:
+.LFB6:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -25,12 +25,12 @@ init_sem:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE5:
+.LFE6:
 	.size	init_sem, .-init_sem
 	.globl	setVerde
 	.type	setVerde, @function
 setVerde:
-.LFB6:
+.LFB7:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -49,12 +49,12 @@ setVerde:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE6:
+.LFE7:
 	.size	setVerde, .-setVerde
 	.globl	setAmarillo
 	.type	setAmarillo, @function
 setAmarillo:
-.LFB7:
+.LFB8:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -73,12 +73,12 @@ setAmarillo:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE7:
+.LFE8:
 	.size	setAmarillo, .-setAmarillo
 	.globl	setRojo
 	.type	setRojo, @function
 setRojo:
-.LFB8:
+.LFB9:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -97,12 +97,12 @@ setRojo:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE8:
+.LFE9:
 	.size	setRojo, .-setRojo
 	.globl	liberar_sem
 	.type	liberar_sem, @function
 liberar_sem:
-.LFB9:
+.LFB10:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -119,12 +119,12 @@ liberar_sem:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE9:
+.LFE10:
 	.size	liberar_sem, .-liberar_sem
 	.globl	tiempoAmarillo
 	.type	tiempoAmarillo, @function
 tiempoAmarillo:
-.LFB10:
+.LFB11:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -142,12 +142,12 @@ tiempoAmarillo:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE10:
+.LFE11:
 	.size	tiempoAmarillo, .-tiempoAmarillo
 	.globl	tiempoRojo
 	.type	tiempoRojo, @function
 tiempoRojo:
-.LFB11:
+.LFB12:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -163,12 +163,12 @@ tiempoRojo:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE11:
+.LFE12:
 	.size	tiempoRojo, .-tiempoRojo
 	.globl	tiempoVerde
 	.type	tiempoVerde, @function
 tiempoVerde:
-.LFB12:
+.LFB13:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -182,21 +182,21 @@ tiempoVerde:
 	movl	-12(%rbp), %eax
 	movl	%eax, %edi
 	call	tiempoAmarillo
-	negl	%eax
 	movl	%eax, %ebx
 	movl	-12(%rbp), %eax
 	movl	%eax, %edi
 	call	tiempoRojo
-	subl	%eax, %ebx
-	movl	%ebx, %eax
-	addl	$40, %eax
+	addl	%ebx, %eax
+	movl	$40, %edx
+	subl	%eax, %edx
+	movl	%edx, %eax
 	addq	$8, %rsp
 	popq	%rbx
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE12:
+.LFE13:
 	.size	tiempoVerde, .-tiempoVerde
 	.section	.rodata
 	.align 8
@@ -206,7 +206,7 @@ tiempoVerde:
 	.globl	empezarCiclo
 	.type	empezarCiclo, @function
 empezarCiclo:
-.LFB13:
+.LFB14:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -288,12 +288,12 @@ empezarCiclo:
 	call	sleep@PLT
 	jmp	.L14
 	.cfi_endproc
-.LFE13:
+.LFE14:
 	.size	empezarCiclo, .-empezarCiclo
 	.globl	tiempoEspera
 	.type	tiempoEspera, @function
 tiempoEspera:
-.LFB14:
+.LFB15:
 	.cfi_startproc
 	pushq	%rbp
 	.cfi_def_cfa_offset 16
@@ -322,7 +322,7 @@ tiempoEspera:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE14:
+.LFE15:
 	.size	tiempoEspera, .-tiempoEspera
-	.ident	"GCC: (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0"
+	.ident	"GCC: (Ubuntu 8.3.0-6ubuntu1) 8.3.0"
 	.section	.note.GNU-stack,"",@progbits
