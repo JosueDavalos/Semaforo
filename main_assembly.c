@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 #include <stdio.h>
 #define TIEMPO_REACCION 1 // tiempo de reaccion del conductor (usualmente es 1 s)
