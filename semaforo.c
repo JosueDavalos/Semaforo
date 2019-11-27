@@ -76,7 +76,7 @@ void empezarCiclo(Sem *sem1, Sem *sem2, unsigned int velocidad_limite){
         imprimirVia(sem1,sem2);
         sleep(tiempo_verde); 
 
-        setAmarillo(sem2);
+        setAmarillo(sem1);
         imprimirVia(sem1,sem2);
         sleep(tiempo_amarillo);
     }
